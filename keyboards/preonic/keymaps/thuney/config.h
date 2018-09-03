@@ -7,7 +7,8 @@
     #define STARTUP_SONG SONG(PREONIC_SOUND)
     // #define STARTUP_SONG SONG(NO_SOUND)
 
-    #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
+    #define DEFAULT_LAYER_SONGS { 
+									SONG(QWERTY_SOUND), \
                                 }
 #endif
 
@@ -36,5 +37,12 @@
 
 /* override number of MIDI tone keycodes (each octave adds 12 keycodes and allocates 12 bytes) */
 //#define MIDI_TONE_KEYCODE_OCTAVES 2
+
+#define MOUSEKEY_DELAY             300
+#define MOUSEKEY_INTERVAL          50
+#define MOUSEKEY_MAX_SPEED         10
+#define MOUSEKEY_TIME_TO_MAX       20
+#define MOUSEKEY_WHEEL_MAX_SPEED   8
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 40
 
 #endif
